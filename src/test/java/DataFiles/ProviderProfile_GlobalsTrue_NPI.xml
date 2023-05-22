@@ -1,0 +1,632 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:lnrisk:ws:wshealthcare:(internal)@ver=2.41">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <urn:ProviderReportRequest>
+            <!--You may enter the following 6 items in any order-->
+            <!--Optional:-->
+            <urn:User>
+                <!--You may enter the following 41 items in any order-->
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: int-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:ExcludeDMVPII>true</urn:ExcludeDMVPII>
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:DataRestrictionMask>0000000000000000000000000000</urn:DataRestrictionMask><urn:DataPermissionMask>1111111111111111111111111</urn:DataPermissionMask><urn:LnBranded>false</urn:LnBranded>
+                <!--Optional:-->
+                <urn:EndUser>
+                    <!--You may enter the following 6 items in any order-->
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                </urn:EndUser>
+                <!--Optional:-->
+                <!--type: int-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: ResultOutputType - enumeration: [,X,B,P]-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+            </urn:User>
+            <!--Optional:-->
+            <urn:RemoteLocations>
+                <!--Zero or more repetitions:-->
+                <!--type: string-->
+                <urn:Item/>
+            </urn:RemoteLocations>
+            <!--Optional:-->
+            <urn:ServiceLocations>
+                <!--Zero or more repetitions:-->
+                <urn:ServiceLocation>
+                    <!--You may enter the following 3 items in any order-->
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                    <!--Optional:-->
+                    <urn:Parameters>
+                        <!--Zero or more repetitions:-->
+                        <urn:Parameter>
+                            <!--You may enter the following 2 items in any order-->
+                            <!--Optional:-->
+                            <!--type: string-->
+
+                            <!--Optional:-->
+                            <!--type: string-->
+
+                        </urn:Parameter>
+                    </urn:Parameters>
+                </urn:ServiceLocation>
+            </urn:ServiceLocations>
+            <!--Optional:-->
+            <urn:HealthcareConfig>
+                <!--You may enter the following 2 items in any order-->
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <urn:Type>W</urn:Type><urn:ProductKey>1234</urn:ProductKey></urn:HealthcareConfig>
+            <!--Optional:-->
+            <urn:Options>
+                <!--You may enter the following 52 items in any order-->
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: integer-->
+
+                <!--Optional:-->
+                <!--type: integer-->
+
+                <!--Optional:-->
+                <!--type: integer-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: unsignedInt-->
+
+                <!--Optional:-->
+                <!--type: unsignedInt-->
+
+                <!--Optional:-->
+                <!--type: unsignedInt-->
+
+                <!--Optional:-->
+                <!--type: unsignedInt-->
+
+                <!--Optional:-->
+                <!--type: unsignedInt-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <!--Optional:-->
+                <!--type: boolean-->
+
+                <urn:ReturnCount>25</urn:ReturnCount><urn:StartingRecord>1</urn:StartingRecord><urn:IncludeNPI>true</urn:IncludeNPI><urn:IncludeDOB>true</urn:IncludeDOB><urn:BestRules>HMS</urn:BestRules></urn:Options>
+            <!--Optional:-->
+            <urn:ReportBy>
+                <!--You may enter the following 34 items in any order-->
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <urn:LNPID>1120804</urn:LNPID><urn:ProviderName>
+                <!--You may enter the following 7 items in any order-->
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+            </urn:ProviderName>
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <urn:LocationAddress>
+                    <!--You may enter the following 22 items in any order-->
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                </urn:LocationAddress>
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <urn:DOB>
+                    <!--You may enter the following 3 items in any order-->
+                    <!--Optional:-->
+                    <!--type: short-->
+
+                    <!--Optional:-->
+                    <!--type: short-->
+
+                    <!--Optional:-->
+                    <!--type: short-->
+
+                </urn:DOB>
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <urn:Licenses>
+                    <!--Zero or more repetitions:-->
+                    <urn:License>
+                        <!--You may enter the following 3 items in any order-->
+                        <!--Optional:-->
+                        <!--type: string-->
+
+                        <!--Optional:-->
+                        <!--type: string-->
+
+                        <!--Optional:-->
+                        <!--type: string-->
+
+                    </urn:License>
+                </urn:Licenses>
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <urn:DEANumbers>
+                    <!--Zero or more repetitions:-->
+                    <!--type: string-->
+                    <urn:DEANumber/>
+                </urn:DEANumbers>
+                <!--Optional:-->
+                <urn:Taxonomies>
+                    <!--Zero or more repetitions:-->
+                    <!--type: string-->
+                    <urn:Taxonomy/>
+                </urn:Taxonomies>
+                <!--Optional:-->
+                <urn:Specialties>
+                    <!--Zero or more repetitions:-->
+                    <urn:Specialty>
+                        <!--You may enter the following 3 items in any order-->
+                        <!--Optional:-->
+                        <!--type: string-->
+
+                        <!--Optional:-->
+                        <!--type: string-->
+
+                        <!--Optional:-->
+                        <!--type: string-->
+
+                    </urn:Specialty>
+                </urn:Specialties>
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <urn:MedSchool>
+                    <!--You may enter the following 3 items in any order-->
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                    <!--Optional:-->
+                    <!--type: string-->
+
+                </urn:MedSchool>
+                <!--Optional:-->
+                <urn:ServiceFrom>
+                    <!--You may enter the following 3 items in any order-->
+                    <!--Optional:-->
+                    <!--type: short-->
+
+                    <!--Optional:-->
+                    <!--type: short-->
+
+                    <!--Optional:-->
+                    <!--type: short-->
+
+                </urn:ServiceFrom>
+                <!--Optional:-->
+                <urn:ServiceTo>
+                    <!--You may enter the following 3 items in any order-->
+                    <!--Optional:-->
+                    <!--type: short-->
+
+                    <!--Optional:-->
+                    <!--type: short-->
+
+                    <!--Optional:-->
+                    <!--type: short-->
+
+                </urn:ServiceTo>
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <!--type: string-->
+
+                <!--Optional:-->
+                <urn:LegacyIds>
+                    <!--Zero or more repetitions:-->
+                    <urn:LegacyId>
+                        <!--You may enter the following 2 items in any order-->
+                        <!--Optional:-->
+                        <!--type: string-->
+
+                        <!--Optional:-->
+                        <!--type: string-->
+
+                    </urn:LegacyId>
+                </urn:LegacyIds>
+            </urn:ReportBy>
+        </urn:ProviderReportRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

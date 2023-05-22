@@ -1,0 +1,357 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:lnrisk:ws:wshealthcare:(internal)@ver=${#Project#ver}">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <urn:OrganizationReportRequest>
+            <!--You may enter the following 6 items in any order-->
+
+            <urn:User>
+                <!--You may enter the following 41 items in any order-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <urn:ExcludeDMVPII>true</urn:ExcludeDMVPII>
+
+
+
+                <urn:DataRestrictionMask>${DRM_NO_RESTRICT_ALL}</urn:DataRestrictionMask>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <urn:DataPermissionMask>${DPM_ALL}</urn:DataPermissionMask><urn:LnBranded>false</urn:LnBranded>
+
+                <urn:EndUser>
+                    <!--You may enter the following 6 items in any order-->
+
+
+
+
+
+
+
+
+
+
+
+
+                </urn:EndUser>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </urn:User>
+
+            <urn:RemoteLocations>
+                <!--Zero or more repetitions:-->
+                <urn:Item/>
+            </urn:RemoteLocations>
+
+            <urn:ServiceLocations>
+                <!--Zero or more repetitions:-->
+                <urn:ServiceLocation>
+                    <!--You may enter the following 3 items in any order-->
+
+
+
+
+
+                    <urn:Parameters>
+                        <!--Zero or more repetitions:-->
+                        <urn:Parameter>
+                            <!--You may enter the following 2 items in any order-->
+
+
+
+
+                        </urn:Parameter>
+                    </urn:Parameters>
+                </urn:ServiceLocation>
+            </urn:ServiceLocations>
+
+            <urn:HealthcareConfig>
+                <!--You may enter the following 2 items in any order-->
+
+
+
+
+            </urn:HealthcareConfig>
+
+            <urn:Options>
+                <!--You may enter the following 33 items in any order-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <urn:ReturnCount>25</urn:ReturnCount><urn:StartingRecord>1</urn:StartingRecord><urn:IncludeAllSets>1</urn:IncludeAllSets>
+                <urn:IncludeFEIN>0</urn:IncludeFEIN><urn:BestRules>HMS</urn:BestRules></urn:Options>
+
+            <urn:ReportBy>
+                <!--You may enter the following 29 items in any order-->
+
+
+
+
+
+                <urn:BusinessIds>
+                    <!--You may enter the following 7 items in any order-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </urn:BusinessIds>
+
+
+                <urn:OrganizationName>LAFAYETTE HOSPITAL</urn:OrganizationName>
+                <urn:FEIN>481300080</urn:FEIN>
+                <urn:Address>
+                    <!--You may enter the following 18 items in any order-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </urn:Address>
+
+
+
+
+
+                <urn:Licenses>
+                    <!--Zero or more repetitions:-->
+                    <urn:License>
+                        <!--You may enter the following 3 items in any order-->
+
+
+
+
+
+
+                    </urn:License>
+                </urn:Licenses>
+
+
+
+                <urn:DEANumbers>
+                    <!--Zero or more repetitions:-->
+                    <urn:DEANumber/>
+                </urn:DEANumbers>
+
+
+
+
+
+
+
+                <urn:Taxonomies>
+                    <!--Zero or more repetitions:-->
+                    <urn:Taxonomy/>
+                </urn:Taxonomies>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <urn:LegacyIds>
+                    <!--Zero or more repetitions:-->
+                    <urn:LegacyId>
+                        <!--You may enter the following 2 items in any order-->
+
+
+
+
+                        <urn:Id/></urn:LegacyId>
+                </urn:LegacyIds>
+
+
+
+
+            </urn:ReportBy>
+        </urn:OrganizationReportRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

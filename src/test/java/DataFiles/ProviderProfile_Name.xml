@@ -1,0 +1,618 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:lnrisk:ws:wshealthcare:(internal)@ver=${#Project#ver}">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <urn:ProviderReportRequest>
+            <!--You may enter the following 6 items in any order-->
+            <!--Optional:-->
+            <urn:User>
+                <!--You may enter the following 38 items in any order-->
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:ReferenceCode/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:BillingCode/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:QueryId/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:CompanyId/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:BillingId/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:LoginHistoryId/>
+                <!--Optional:-->
+                <!--type: int-->
+                <urn:DebitUnits/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:IP/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:IndustryClass/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:ResultFormat/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:LogAsFunction/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:LogAsSuplFunction/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:SSNMask/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:DOBMask/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:ExcludeDMVPII>true</urn:ExcludeDMVPII>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:DLMask/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:DataRestrictionMask>${DRM_NO_RESTRICT_ALL}</urn:DataRestrictionMask>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:DataPermissionMask>${DPM_ALL}</urn:DataPermissionMask>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:DeathMasterPurpose/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:SourceCode/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:ApplicationType/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:SSNMaskingOn/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:DLMaskingOn/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:LnBranded>false</urn:LnBranded>
+                <!--Optional:-->
+                <urn:EndUser>
+                    <!--You may enter the following 5 items in any order-->
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:CompanyName/>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:StreetAddress1/>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:City/>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:State/>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:Phone/>
+                </urn:EndUser>
+                <!--Optional:-->
+                <!--type: int-->
+                <urn:MaxWaitSeconds/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:RelatedTransactionId/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:AccountNumber/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:OutcomeTrackingOptOut/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:ProductType/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:BatchJobId/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:BatchSequenceNumber/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:ArchiveOptIn/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:ProcessSpecId/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:ProductCode/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:AllowRoamingBypass/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:ConsumerStatementsMask/>
+                <!--Optional:-->
+                <!--type: ResultOutputType - enumeration: [,X,B,P]-->
+                <urn:OutputType/>
+            </urn:User>
+            <!--Optional:-->
+            <urn:RemoteLocations>
+                <!--Zero or more repetitions:-->
+                <!--type: string-->
+                <urn:Item/>
+            </urn:RemoteLocations>
+            <!--Optional:-->
+            <urn:ServiceLocations>
+                <!--Zero or more repetitions:-->
+                <urn:ServiceLocation>
+                    <!--You may enter the following 3 items in any order-->
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:LocationId/>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:ServiceName/>
+                    <!--Optional:-->
+                    <urn:Parameters>
+                        <!--Zero or more repetitions:-->
+                        <urn:Parameter>
+                            <!--You may enter the following 2 items in any order-->
+                            <!--Optional:-->
+                            <!--type: string-->
+                            <urn:Name/>
+                            <!--Optional:-->
+                            <!--type: string-->
+                            <urn:Value/>
+                        </urn:Parameter>
+                    </urn:Parameters>
+                </urn:ServiceLocation>
+            </urn:ServiceLocations>
+            <!--Optional:-->
+            <urn:HealthcareConfig>
+                <!--You may enter the following 2 items in any order-->
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:Type/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:ProductKey/>
+            </urn:HealthcareConfig>
+            <!--Optional:-->
+            <urn:Options>
+                <!--You may enter the following 50 items in any order-->
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:UserAgent/>
+                <!--Optional:-->
+                <!--type: integer-->
+                <urn:ThresholdLimit/>
+                <!--Optional:-->
+                <!--type: integer-->
+                <urn:ReturnCount>25</urn:ReturnCount>
+                <!--Optional:-->
+                <!--type: integer-->
+                <urn:StartingRecord>1</urn:StartingRecord>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:IncludeAllSets/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:IncludeEmail/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:IncludeLanguages/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:IncludeLexIDs/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:IncludeMassCoveredRecipients/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:IncludeShaID/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:IncludeSurescripts/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:IncludeTaxID/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:IncludeMedicalEducationNumber/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:IncludeNonVendible/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:IncludeSanctions/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:IncludeSpecialties/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:IncludeLicenses/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:IncludeDOB/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:IncludeDOD/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:IncludeFEIN/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:IncludeDEA/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:IncludeNPI>TRUE</urn:IncludeNPI>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:IncludeUPIN>TRUE</urn:IncludeUPIN>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:IncludeTaxonomy/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:IncludeMedSchool/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:IncludeMedicare>TRUE</urn:IncludeMedicare>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:IncludeMedicaid/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:IncludeCSR/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:IncludeEssentialCommunityResources/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:IncludeAffiliations/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:IncludeABMSBoardCertifiedSpecialty/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:SuppressLicenseHistory/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:SortAndRankLicenseTogether/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:MixedCaseOutput/>
+                <!--Optional:-->
+                <!--type: unsignedInt-->
+                <urn:MatchScoreThreshold/>
+                <!--Optional:-->
+                <!--type: unsignedInt-->
+                <urn:DEAGraceDays/>
+                <!--Optional:-->
+                <!--type: unsignedInt-->
+                <urn:NPIGraceDays/>
+                <!--Optional:-->
+                <!--type: unsignedInt-->
+                <urn:LicenseGraceDays/>
+                <!--Optional:-->
+                <!--type: unsignedInt-->
+                <urn:LicenseVerificationThreshold/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:UsePracticeStateForEmptyLicenseState/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:Product/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:OneStepRule/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:BestRules/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:ExcludeGSASanction/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:IncludeMedicareEnrollment>TRUE</urn:IncludeMedicareEnrollment>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:IncludeMedicareOrderReferring>TRUE</urn:IncludeMedicareOrderReferring>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:ExcludeEmail1/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:ExcludeEmail2/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:ExcludeEmail3/>
+                <!--Optional:-->
+                <!--type: boolean-->
+                <urn:ExcludeNetworkTags/>
+            </urn:Options>
+            <!--Optional:-->
+            <urn:ReportBy>
+                <!--You may enter the following 35 items in any order-->
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:LNPID/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:UniqueId/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:ClientProviderId/>
+                <!--Optional:-->
+                <urn:ProviderName>
+                    <!--You may enter the following 7 items in any order-->
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:Full/>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:First>David</urn:First>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:Middle/>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:Last>Ferrell</urn:Last>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:Suffix/>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:Prefix/>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:ProfessionalSuffix/>
+                </urn:ProviderName>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:ProviderStatus/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:LocationCompanyName/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:LocationHospitalName/>
+                <!--Optional:-->
+                <urn:LocationAddress>
+                    <!--You may enter the following 22 items in any order-->
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:AddressType/>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:StreetNumber/>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:StreetPreDirection/>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:StreetName/>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:StreetSuffix/>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:StreetPostDirection/>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:UnitDesignation/>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:UnitNumber/>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:StreetAddress1/>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:StreetAddress2/>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:City/>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:State/>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:Zip5/>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:Zip4/>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:County/>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:PostalCode/>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:StateCityZip/>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:Latitude/>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:Longitude/>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:CBSA/>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:LegacyLocationId/>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:LegacyAggregateId/>
+                </urn:LocationAddress>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:DistanceFromLocationAddress/>
+                <!--Optional:-->
+                <urn:DOB>
+                    <!--You may enter the following 3 items in any order-->
+                    <!--Optional:-->
+                    <!--type: short-->
+                    <urn:Year/>
+                    <!--Optional:-->
+                    <!--type: short-->
+                    <urn:Month/>
+                    <!--Optional:-->
+                    <!--type: short-->
+                    <urn:Day/>
+                </urn:DOB>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:Gender/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:TIN/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:UPIN/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:Phone/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:Fax/>
+                <!--Optional:-->
+                <urn:Licenses>
+                    <!--Zero or more repetitions:-->
+                    <urn:License>
+                        <!--You may enter the following 3 items in any order-->
+                        <!--Optional:-->
+                        <!--type: string-->
+                        <urn:Type/>
+                        <!--Optional:-->
+                        <!--type: string-->
+                        <urn:Number/>
+                        <!--Optional:-->
+                        <!--type: string-->
+                        <urn:State/>
+                    </urn:License>
+                </urn:Licenses>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:NPINumber/>
+                <!--Optional:-->
+                <urn:DEANumbers>
+                    <!--Zero or more repetitions:-->
+                    <!--type: string-->
+                    <urn:DEANumber/>
+                </urn:DEANumbers>
+                <!--Optional:-->
+                <urn:Taxonomies>
+                    <!--Zero or more repetitions:-->
+                    <!--type: string-->
+                    <urn:Taxonomy/>
+                </urn:Taxonomies>
+                <!--Optional:-->
+                <urn:Specialties>
+                    <!--Zero or more repetitions:-->
+                    <urn:Specialty>
+                        <!--You may enter the following 3 items in any order-->
+                        <!--Optional:-->
+                        <!--type: string-->
+                        <urn:PractitionerType/>
+                        <!--Optional:-->
+                        <!--type: string-->
+                        <urn:Specialty/>
+                        <!--Optional:-->
+                        <!--type: string-->
+                        <urn:SubSpecialty/>
+                    </urn:Specialty>
+                </urn:Specialties>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:MedicareNumber/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:MedicareState/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:MedicaidNumber/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:MedicaidState/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:CSRNumber/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:CSRState/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:Email/>
+                <!--Optional:-->
+                <urn:MedSchool>
+                    <!--You may enter the following 3 items in any order-->
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:SchoolName/>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:GraduationYear/>
+                    <!--Optional:-->
+                    <!--type: string-->
+                    <urn:Code/>
+                </urn:MedSchool>
+                <!--Optional:-->
+                <urn:ServiceFrom>
+                    <!--You may enter the following 3 items in any order-->
+                    <!--Optional:-->
+                    <!--type: short-->
+                    <urn:Year/>
+                    <!--Optional:-->
+                    <!--type: short-->
+                    <urn:Month/>
+                    <!--Optional:-->
+                    <!--type: short-->
+                    <urn:Day/>
+                </urn:ServiceFrom>
+                <!--Optional:-->
+                <urn:ServiceTo>
+                    <!--You may enter the following 3 items in any order-->
+                    <!--Optional:-->
+                    <!--type: short-->
+                    <urn:Year/>
+                    <!--Optional:-->
+                    <!--type: short-->
+                    <urn:Month/>
+                    <!--Optional:-->
+                    <!--type: short-->
+                    <urn:Day/>
+                </urn:ServiceTo>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:SurescriptsProviderId/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:SHAId/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:MedicalEducationNumber/>
+                <!--Optional:-->
+                <!--type: string-->
+                <urn:MassachusettsCoveredRecipientId/>
+                <!--Optional:-->
+                <urn:LegacyIds>
+                    <!--Zero or more repetitions:-->
+                    <urn:LegacyId>
+                        <!--You may enter the following 2 items in any order-->
+                        <!--Optional:-->
+                        <!--type: string-->
+                        <urn:Id/>
+                        <!--Optional:-->
+                        <!--type: string-->
+                        <urn:Source/>
+                    </urn:LegacyId>
+                </urn:LegacyIds>
+            </urn:ReportBy>
+        </urn:ProviderReportRequest>
+    </soapenv:Body>
+</soapenv:Envelope>
